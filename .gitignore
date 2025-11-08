@@ -30,10 +30,7 @@ venv
 # NodeJS
 node_modules
 
-# Frappe Bench - ignore standard apps and runtime files, keep custom apps
-development/frappe-bench/apps/frappe/
-development/frappe-bench/apps/erpnext/
-development/frappe-bench/apps/hrms/
+# Frappe Bench - ignore runtime files, keep all apps
 development/frappe-bench/env/
 development/frappe-bench/logs/
 development/frappe-bench/sites/
@@ -42,6 +39,7 @@ development/frappe-bench/delete_me_plz/
 development/frappe-bench/config/
 development/frappe-bench/Procfile
 development/frappe-bench/patches.txt
-# Ignore __pycache__ in custom apps too
-development/frappe-bench/apps/*/ali_custom_app/**/__pycache__/
-development/frappe-bench/apps/*/**/__pycache__/
+# Ignore __pycache__ in all apps
+development/frappe-bench/apps/**/__pycache__/
+# Ignore node_modules in all apps
+development/frappe-bench/apps/**/node_modules/
