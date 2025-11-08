@@ -9,6 +9,7 @@ sites
 !development/installer.py
 !development/apps-example.json
 !development/vscode-example/
+!development/frappe-bench/
 
 # Pycharm
 .idea
@@ -29,13 +30,5 @@ venv
 # NodeJS
 node_modules
 
-# Frappe Bench - exclude standard apps, keep custom ones
-development/frappe-bench/apps/frappe/
-development/frappe-bench/apps/erpnext/
-development/frappe-bench/apps/hrms/
-development/frappe-bench/env/
-development/frappe-bench/logs/
-development/frappe-bench/sites/
-development/frappe-bench/archived/
-development/frappe-bench/delete_me_plz/
-development/frappe-bench/config/
+# Frappe Bench - entire directory is ignored, custom apps have their own git repos
+development/frappe-bench/
