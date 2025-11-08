@@ -30,5 +30,18 @@ venv
 # NodeJS
 node_modules
 
-# Frappe Bench - entire directory is ignored, custom apps have their own git repos
-development/frappe-bench/
+# Frappe Bench - ignore standard apps and runtime files, keep custom apps
+development/frappe-bench/apps/frappe/
+development/frappe-bench/apps/erpnext/
+development/frappe-bench/apps/hrms/
+development/frappe-bench/env/
+development/frappe-bench/logs/
+development/frappe-bench/sites/
+development/frappe-bench/archived/
+development/frappe-bench/delete_me_plz/
+development/frappe-bench/config/
+development/frappe-bench/Procfile
+development/frappe-bench/patches.txt
+# Ignore __pycache__ in custom apps too
+development/frappe-bench/apps/*/ali_custom_app/**/__pycache__/
+development/frappe-bench/apps/*/**/__pycache__/

@@ -1,0 +1,42 @@
+{
+ "charts": [],
+ "content": [
+  {
+   "id": "welcome",
+   "type": "header",
+   "data": {
+    "text": "Welcome to Ali Custom App",
+    "level": 2
+   }
+  },
+  {
+   "id": "description",
+   "type": "paragraph",
+   "data": {
+    "text": "This is your custom Frappe application. Start building your business logic here."
+   }
+  }
+ ],
+ "creation": "2025-11-08 00:00:00.000000",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "Ali Custom App",
+ "links": [],
+ "modified": "2025-11-08 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Ali Custom App",
+ "name": "Ali Custom App",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "quick_lists": [],
+ "roles": [],
+ "shortcuts": [],
+ "title": "Ali Custom App"
+}
