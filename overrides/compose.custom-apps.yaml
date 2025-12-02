@@ -1,0 +1,43 @@
+services:
+  # Mount custom apps from development environment
+  backend:
+    volumes:
+      - ./development/frappe-bench/apps/frappe:/home/frappe/frappe-bench/apps/frappe:ro
+      - ./development/frappe-bench/apps/erpnext:/home/frappe/frappe-bench/apps/erpnext:ro
+      - ./development/frappe-bench/apps/hrms:/home/frappe/frappe-bench/apps/hrms:ro
+
+  configurator:
+    volumes:
+      - ./development/frappe-bench/apps/frappe:/home/frappe/frappe-bench/apps/frappe:ro
+      - ./development/frappe-bench/apps/erpnext:/home/frappe/frappe-bench/apps/erpnext:ro
+      - ./development/frappe-bench/apps/hrms:/home/frappe/frappe-bench/apps/hrms:ro
+
+  websocket:
+    volumes:
+      - ./development/frappe-bench/apps/frappe:/home/frappe/frappe-bench/apps/frappe:ro
+      - ./development/frappe-bench/apps/erpnext:/home/frappe/frappe-bench/apps/erpnext:ro
+      - ./development/frappe-bench/apps/hrms:/home/frappe/frappe-bench/apps/hrms:ro
+
+  queue-short:
+    volumes:
+      - ./development/frappe-bench/apps/frappe:/home/frappe/frappe-bench/apps/frappe:ro
+      - ./development/frappe-bench/apps/erpnext:/home/frappe/frappe-bench/apps/erpnext:ro
+      - ./development/frappe-bench/apps/hrms:/home/frappe/frappe-bench/apps/hrms:ro
+
+  queue-long:
+    volumes:
+      - ./development/frappe-bench/apps/frappe:/home/frappe/frappe-bench/apps/frappe:ro
+      - ./development/frappe-bench/apps/erpnext:/home/frappe/frappe-bench/apps/erpnext:ro
+      - ./development/frappe-bench/apps/hrms:/home/frappe/frappe-bench/apps/hrms:ro
+
+  scheduler:
+    volumes:
+      - ./development/frappe-bench/apps/frappe:/home/frappe/frappe-bench/apps/frappe:ro
+      - ./development/frappe-bench/apps/erpnext:/home/frappe/frappe-bench/apps/erpnext:ro
+      - ./development/frappe-bench/apps/hrms:/home/frappe/frappe-bench/apps/hrms:ro
+
+  frontend:
+    volumes:
+      - ./development/frappe-bench/apps/frappe:/home/frappe/frappe-bench/apps/frappe:ro
+      - ./development/frappe-bench/apps/erpnext:/home/frappe/frappe-bench/apps/erpnext:ro
+      - ./development/frappe-bench/apps/hrms:/home/frappe/frappe-bench/apps/hrms:ro
